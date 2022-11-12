@@ -25,11 +25,19 @@ h1 {
     font-size: 100px;
     color: var(--main);
     font-family: takidemo;
+    border-bottom: 5px solid var(--main);
+
+}
+
+h2 {
+    font-family: takidemo;
+    margin: 10px;
+    font-size: 40px;
 }
 
 #canvas {
     width: 70%;
     height: 30vw;
-    background-color: black;
-    border-radius: 50px;
+    background-color: var(--main);
+    border-radius: 10px;
 }
