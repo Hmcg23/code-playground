@@ -1,3 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main: rgb(174, 58, 58)
+}
+
+@font-face {
+    src: url('../fonts/TAKIDEMO-iueiie.otf');
+    font-family: takidemo;
+}
+
+
 main {
     display: flex;
     justify-content: center;
@@ -6,11 +21,27 @@ main {
 }
 
 h1 {
+    margin-top: 10px;
     font-size: 100px;
+    color: var(--main);
+    font-family: takidemo;
 }
 
 button {
-    width: 15rem;
-    height: 10rem;
-    font-size: 50px;
+    width: 10rem;
+    height: 7rem;
+    font-size: 25px;
+    margin: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--main);
+    color: white;
+    font-family: takidemo;
+}
+
+#canvas {
+    width: 70%;
+    height: 30vw;
+    background-color: black;
+    border-radius: 50px;
 }
