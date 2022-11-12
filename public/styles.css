@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    src: url('../fonts/TAKIDEMO-iueiie.otf');
+    src: url('../fonts/Shrikhand-Regular.ttf');
     font-family: takidemo;
 }
 
@@ -24,18 +24,6 @@ h1 {
     margin-top: 10px;
     font-size: 100px;
     color: var(--main);
-    font-family: takidemo;
-}
-
-button {
-    width: 10rem;
-    height: 7rem;
-    font-size: 25px;
-    margin: 20px;
-    border-radius: 10px;
-    border: none;
-    background-color: var(--main);
-    color: white;
     font-family: takidemo;
 }
 
