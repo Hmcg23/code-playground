@@ -4,12 +4,13 @@
 }
 
 :root {
-    --main: rgb(174, 58, 58)
+    --main: #222222;
+    --red: #ae3a3a;
 }
 
 @font-face {
     src: url('../fonts/Shrikhand-Regular.ttf');
-    font-family: takidemo;
+    font-family: Shrikhand;
 }
 
 
@@ -24,15 +25,16 @@ h1 {
     margin-top: 10px;
     font-size: 100px;
     color: var(--main);
-    font-family: takidemo;
+    font-family: Shrikhand;
     border-bottom: 5px solid var(--main);
 
 }
 
 h2 {
-    font-family: takidemo;
+    font-family: Shrikhand;
     margin: 10px;
     font-size: 40px;
+    color: var(--red);
 }
 
 #canvas {
