@@ -27,17 +27,19 @@ window.onload = () => {
     context.fill();
     */
     // text
+    /*
     const text = 'Very very cool';
     context.font = '30px Shrikhand';
     context.lineWidth = 10;
     context.fillStyle = mainRed;
     context.fillText(text, 170, 200);
+    */
     // -------------------------------------------------------------------------------------
     // Animations
-    let x = 300;
+    let x = 450;
     let y = 0;
     const draw = () => {
-        context.clearRect(0, 0, 600, 110);
+        context.clearRect(0, 0, 600, 400);
         context.beginPath();
         context.rect(x, y, 100, 100);
         context.lineWidth = 10;
@@ -48,14 +50,21 @@ window.onload = () => {
         context.arc(x + 50, y + 50, 50, 1 * Math.PI, 4 * Math.PI, false);
         context.fillStyle = mainRed;
         context.fill();
+        // text
+        context.beginPath();
+        const text = 'Very very cool';
+        context.font = '30px Shrikhand';
+        context.lineWidth = 10;
+        context.fillStyle = mainRed;
+        context.fillText(text, 170, 200);
 
-        x += (100 - x) / 10;
-        if (x < 101) {
-            x = 600;
+        y += (300 - y) / 20;
+        if (y > 299 ) {
+            y = 0;
         }
+        window.requestAnimationFrame(draw, 16);
     }
-
-    setInterval(draw, 50);
+    draw();
 }
 
 
